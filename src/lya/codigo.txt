@@ -1,5 +1,5 @@
 public class m {
-	int y=0;
+	int y=1;
 	String x=a;
 	y=x+1;
  	}
