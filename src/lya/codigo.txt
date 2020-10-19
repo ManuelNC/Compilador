@@ -1,0 +1,6 @@
+public class m {
+	int y=0;
+	String x=a;
+	y=x+1;
+ 	}
+}
