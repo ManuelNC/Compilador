@@ -1,13 +1,11 @@
 package lya;
-
+/*JCC*/
 public class SimpleCharStream
 {
-/** Whether parser is static. */
   public static final boolean staticFlag = true;
   static int bufsize;
   static int available;
   static int tokenBegin;
-/** Position in buffer. */
   static public int bufpos = -1;
   static protected int bufline[];
   static protected int bufcolumn[];

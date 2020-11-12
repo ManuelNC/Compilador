@@ -1,4 +1,5 @@
 package lya;
+/*JCC*/
 
 public interface testConstants {
 

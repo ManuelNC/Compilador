@@ -1,5 +1,5 @@
 package lya;
-
+//JCC
 
 /** Token Manager. */
 public class testTokenManager implements testConstants
@@ -192,7 +192,7 @@ static private int jjStartNfaWithStates_0(int pos, int kind, int state)
    catch(java.io.IOException e) { return pos + 1; }
    return jjMoveNfa_0(state, pos + 1);
 }
-@SuppressWarnings({ "static-access", "unused" })
+@SuppressWarnings({ "unused", "static-access" })
 static private int jjMoveNfa_0(int startState, int curPos)
 {
    int startsAt = 0;
@@ -444,8 +444,7 @@ static private int jjMoveNfa_0(int startState, int curPos)
       }
       else
       {
-         @SuppressWarnings("unused")
-		int i2 = (curChar & 0xff) >> 6;
+         int i2 = (curChar & 0xff) >> 6;
          long l2 = 1L << (curChar & 077);
          do
          {

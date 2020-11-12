@@ -1,5 +1,4 @@
 package lya;
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.*;
@@ -34,24 +33,23 @@ public class test implements testConstants {
 	static String error = "";
 	static List<Identifier> symbols = new ArrayList<Identifier>();
 
-	@SuppressWarnings("static-access")
+	@SuppressWarnings({ "static-access", "unused" })
 	public static void main(String[] args) throws ParseException, FileNotFoundException {
 		try {
 			test analizador = new test(new FileReader("src/lya/codigo.txt"));
 			analizador.Programa();
-			@SuppressWarnings("unused")
 			AnalisisSemantico as = new AnalisisSemantico("src/lya/codigo.txt");
-			// AnalisisSemantico as= new
-			// AnalisisSemantico(analizador.jj_input_stream.GetImage());
+			//AnalisisSemantico as= new
+			//AnalisisSemantico(analizador.jj_input_stream.GetImage());
 			if (error.equals(""))
 				System.out.println("Exito, codigo correcto.");
 			else {
-				System.out.println("Error, algo anda mal: ");
-				System.out.println(error);
+//---------------System.out.println("Error, algo anda mal: ");
+//---------------System.out.println(error);
 			}
-			System.out.println("Identificadores encontrados: ");
+//---------------System.out.println("Identificadores encontrados: ");
 			for (Identifier i : symbols) {
-				System.out.println(i.toString());
+//---------------System.out.println(i.toString());
 			}
 		} catch (ParseException e) {
 			System.out.println(e.getMessage());
