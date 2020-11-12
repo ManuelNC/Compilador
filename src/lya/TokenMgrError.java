@@ -1,5 +1,4 @@
 package lya;
-//JCC
 
 public class TokenMgrError extends Error
 {
@@ -61,18 +60,6 @@ public class TokenMgrError extends Error
     return retval.toString();
   }
 
-  /**
-   * Returns a detailed message for the Error when it is thrown by the
-   * token manager to indicate a lexical error.
-   * Parameters :
-   *    EOFSeen     : indicates if EOF caused the lexical error
-   *    curLexState : lexical state in which this error occurred
-   *    errorLine   : line number when the error occurred
-   *    errorColumn : column number when the error occurred
-   *    errorAfter  : prefix that was seen before this error occurred
-   *    curchar     : the offending character
-   * Note: You can customize the lexical error message by modifying this method.
-   */
   protected static String LexicalError(boolean EOFSeen, int lexState, int errorLine, int errorColumn, String errorAfter, char curChar) {
     return("Lexical error at line " +
           errorLine + ", column " +
@@ -85,18 +72,14 @@ public class TokenMgrError extends Error
     return super.getMessage();
   }
 
-
-  /** No arg constructor. */
   public TokenMgrError() {
   }
 
-  /** Constructor with message and reason. */
   public TokenMgrError(String message, int reason) {
     super(message);
     errorCode = reason;
   }
 
-  /** Full Constructor. */
   public TokenMgrError(boolean EOFSeen, int lexState, int errorLine, int errorColumn, String errorAfter, char curChar, int reason) {
     this(LexicalError(EOFSeen, lexState, errorLine, errorColumn, errorAfter, curChar), reason);
   }

@@ -1,5 +1,5 @@
 options
-{
+{ 
   	LOOKAHEAD = 2;
 	FORCE_LA_CHECK = true;
 }
@@ -100,7 +100,7 @@ void Programa(): {}
 {
 	class_declaration() 
 }
-/*
+
 void class_declaration(): {}{
  	try { 
 		<modifier> <class_word> class_identifier()

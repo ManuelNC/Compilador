@@ -1,6 +1,9 @@
 public class m {
-	int y=1;
-	String x=a;
-	y=x+1;
- 	}
+public int y=0;
+int r=0;
+
+ if(y>9){
+  y=1+2+(3*6);
+  y=r+2+(3*6);
+ }
 }
